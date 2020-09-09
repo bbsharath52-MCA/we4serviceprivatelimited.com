@@ -1,0 +1,174 @@
+.toggle,
+[id^=drop] {
+ display: none;
+}
+
+menu {
+ margin:0;
+ padding: 0;
+ background-color: #2471A3;
+}
+menu:after {
+ content:"";
+ display:table;
+ clear:both;
+}
+
+menu ul {
+ float: right;
+ padding:0;
+ margin:0;
+ list-style: none;
+ position: relative;
+ }
+ 
+menu ul li {
+ margin: 0px;
+ display:inline-block;
+ float: left;
+ }
+
+menu a {
+ display:block;
+ padding:10px 30px; 
+ color:#fff;
+ font-size:17px;
+ text-decoration:none;
+}
+
+
+menu ul li ul li:hover { background-color:#5DADE2; }
+
+menu a:hover {
+  background-color:#5DADE2;
+  color:#fff;
+}
+
+menu ul ul {
+ display: none;
+ position: absolute;
+ top: 40px;
+}
+
+
+ 
+menu ul li:hover > ul {
+ display:inherit;
+}
+ 
+menu ul ul li {
+ width:210px;
+ float:none;
+ display:list-item;
+ position: relative;
+ border-bottom: 1px solid #EB8E96;
+ background-color: #B52F3C;
+}
+
+menu ul ul ul li {
+ position: relative;
+ top:-60px;
+ left:210px;
+ background-color: #B52F3C;
+}
+
+ 
+li > a:after { content:  ' ▼'; font-size:10px;}
+li > a:only-child:after { content: ''; }
+
+
+
+@media all and (max-width : 768px) {
+
+ menu {
+  margin: 0;
+ }
+
+ .toggle + a,
+ .menu {
+  display: none;
+ }
+
+ .toggle {
+  display: block;
+  background-color: #52BE80;
+  padding:14px 20px; 
+  color:#FFF;
+  font-size:17px;
+  text-decoration:none;
+  border:none;
+ }
+
+ .toggle:hover {
+  background-color: #3498DB;
+ }
+
+ [id^=drop]:checked + ul {
+  display: block;
+ }
+
+ menu ul li {
+  display: block;
+  width: 100%;
+  }
+
+ menu ul ul .toggle,
+ menu ul ul a {
+  padding: 0 40px;
+ }
+
+ menu ul ul ul a {
+  padding: 0 80px;
+ }
+
+ menu a:hover,
+  menu ul ul ul a {
+  background-color: #C34854;
+ }
+
+ menu ul li ul li .toggle,
+ menu ul ul a,
+  menu ul ul ul a{
+  padding:14px 20px; 
+  color:#FFF;
+  font-size:17px;
+ }
+
+
+ menu ul li ul li .toggle,
+ menu ul ul a {
+   background-color: #BF3441;
+ }
+
+ menu ul ul {
+  float: none;
+  position:static;
+  color: #ffffff;
+ }
+  
+ menu ul ul li:hover > ul,
+ menu ul li:hover > ul {
+  display: none;
+ }
+  
+
+ menu ul ul li {
+  display: block;
+  width: 100%;
+ }
+
+ menu ul ul ul li {
+  position: static;
+  
+ }
+
+}
+
+@media all and (max-width : 330px) {
+
+ menu ul li {
+  display:block;
+  width: 94%;
+ }
+
+}

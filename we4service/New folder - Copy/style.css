@@ -1,0 +1,190 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #164c82;
+}
+.wrapper
+{
+    width: 1200px;
+    margin: 0px auto;
+}
+nav
+{
+    position: absolute;
+    background: #262626;
+    font-size: 15px; 
+}
+nav > ul
+{
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+}
+nav a
+{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li
+{
+    color: #fff;
+    list-style: none;
+    transition: 0.5s; 
+    padding: 0 35px; 
+}
+nav > ul > li > a
+{
+    padding: 15px 0px;
+}
+nav ul > li.dropdown > a:after
+{
+    position: relative;
+    float: right;
+    content: '';
+    margin-left: 10px;
+    margin-top: 8px;
+}
+nav > ul > li:hover
+{
+    background: #668fc5;
+}
+nav ul.menu-area
+{
+    padding: 40p 40px 0 40px;
+    background: #fff;
+    text-align: left;
+    border-top: 5px slid #164c82;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.6);
+    z-index: 1;
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    top: -9999px;
+    left: 0;
+}
+nav ul li:hover ul.menu-area
+{
+    top: 100%;
+}
+nav ul.menu-area ul
+{
+    width: 100px;
+    margin: 10px 100px;
+    color: #262626;
+}
+nav ul.menu-area h4
+{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    width: 200px;
+}
+nav ul.menu-area ul li
+{
+    display: block;
+}
+nav ul.menu-area ul li a
+{
+    color: #5DADE2;
+    text-transform: none;
+    padding: 2px;
+    width: 150px;
+}
+
+nav ul.menu-area ul li a:hover
+{
+    color: white;
+    background: #5DADE2;
+    width: 150px;
+}
+
+
+
+
+
+
+.slicknav_menu
+{
+    display: none;
+}
+@media screen and (max-width:40em)
+{
+    .res-menu
+    {
+        display: none;
+    }
+    .slicknav_menu
+    {
+        display: block;
+        background: transparent;
+    }
+    .slicknav_nav
+    {
+        background: #ee5555;
+    }
+    .slicknav_nav a
+    {
+        color: #fff;
+    }
+    .slicknav_nav a:hover
+    {
+        border-radius: 0;
+        color: #fff;
+    }
+    .slicknav_nav .slicknav_row:hover
+    {
+        border-radius: 0;
+        background:#164c82;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
